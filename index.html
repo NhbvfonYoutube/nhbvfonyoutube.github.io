@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crystal Stack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6511687119924989"
+     crossorigin="anonymous"></script>
+
+<!-- HOME -->
+
+<div id="homeScreen">
+
+    <img src="logo.png" class="logo">
+
+
+    <img src="start.png" 
+    class="menuButton"
+    onclick="startGame()">
+
+
+    <img src="settings.png"
+    class="menuButton"
+    onclick="openSettings()">
+
+</div>
+
+
+
+<!-- SETTINGS -->
+
+<div id="settingsScreen" class="hidden">
+
+    <div class="credits">
+
+        <h2>Credits</h2>
+
+        Founder: Andrew S<br>
+        Co-Founder: Jackson S<br><br>
+
+        -----------------------------<br><br>
+
+        Artist: Jackson S<br>
+        Lead Developer: Jackson S
+        Settings logo: pngtree.com
+
+    </div>
+
+<button onclick="openTerms()">
+Terms of Service
+</button>
+    
+<button onclick="openPrivacy()">
+    Privacy Policy
+</button>
+
+    <button onclick="toggleSound()">
+    Toggle Sound
+</button>
+    
+    <button onclick="goHome()">
+        Back
+    </button>
+
+
+</div>
+
+
+
+
+<!-- GAME -->
+<div id="gameScreen" class="hidden">
+
+ 
+    <h2>
+        Score:
+        <span id="score">0</span>
+    </h2>
+
+    <div id="board"></div>
+
+    <div id="pieces"></div>
+
+
+    <div id="gameOverScreen" class="hidden">
+
+        <div class="gameOverBox">
+
+            <h1>Game Over</h1>
+
+            <p>
+                Score:
+                <span id="finalScore">0</span>
+            </p>
+
+            <button onclick="restartGame()">
+                Restart
+            </button>
+
+            <button onclick="goHome()">
+                Home
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+    
+<script src="script.js"></script>
+
+</body>
+
+</html>
